@@ -1,0 +1,38 @@
+---
+const { pageTitle = "私のAstro学習ブログ" } = Astro.props;
+const pageDescription = "これは初めての私のAstroサイトです。"
+
+/**
+ * コンポーネント の import
+ */
+
+
+//グローバルスタイル
+import '../styles/global.css';
+
+//Astroコンポーネント
+import Header from '../components/Header.astro';
+import Hamburger from '../components/Hamburger.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDescription} />
+	</head>
+	<body>
+		<Header />
+        <slot />
+		<Footer />
+		<script>
+			import '../scripts/menu.js';
+		</script>
+	</body>
+</html>

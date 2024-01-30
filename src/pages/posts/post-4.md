@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 私の3番目のブログ記事
+title: 私の4番目のブログ記事
 author: Astro学習者
 description: "上手くいかないことがありましたが、コミュニティに質問して助けてもらいました！"
 image:
@@ -9,4 +9,4 @@ image:
 pubDate: 2022-07-15
 tags: ["astro", "公開学習", "後退", "コミュニティ"]
 ---
-すべてがスムーズにいくわけではありませんでしたが、Astroで何かを作るのは楽しいです。そして、[Discordコミュニティ](https://astro.build/chat)は本当にフレンドリーで助けになります！
+記事のリストを作成するために`Astro.glob()`がすべての記事データのリストを返しているので、この記事は他のブログ記事と一緒に表示されるはずです。
